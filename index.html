@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- CRM navigation -->
+        <nav class="CRM-nav">
+          <div class="logo">
+            <a href="index.html" class="active nav-item">
+              <img src="images/V@.png" alt="CRM" />
+            </a>
+          </div>
+
+          <div class="icons left">
+            <a href="https://mail.google.com/mail/u/?authuser=email@domain.com" class="nav-item"><i class="far fa-envelope"></i></a>
+
+            <a href="#" class="nav-item">
+              <div class="badge"><span>1</span></div>
+              <i class="far fa-bell"></i>
+            </a>
+            
+          </div>
+          <div class="user" id="user">
+            <a href="#" class="user-link">Ashutosh</a>
+            <div class="user-img-wrapper">
+              <img src="images/useravatar.png" alt="User 1" />
+            </div>
+          </div>
+        </nav>
+       
+      </header>
+      <main class="main" >
+        <section class="sidebar">
+         <div><h1 style="height: 50px;font-size:xx-large;font-weight:800px; text-align: center;">CRM Board</h1>
+          <img src="images/CRM.png" alt="User 1" style="height:100px;width: 100%;" /></div>
+          <ul class="menu">
+         
+            <li>
+              <a href="#" title="Dashboard" id="homeBtn" class="nav-btn active">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="client" title="Clients" id="clientBtn">
+                <i class="fas fa-sitemap"></i>
+                <span>Clients</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Upcoming birthdays" id="aboutBtn" class="nav-btn">
+                <i class="fas fa-birthday-cake"></i>
+                <span>Upcoming birthdays</span>
+              </a>
+            </li>
+        
+            <li class="menu-heading">
+              <h3>Log activity</h3>
+            </li>
+            <li>
+              <a href="#" title="Activity report" id="activityBtn">
+                <i class="fas fa-chart-bar"></i>
+                <span>Activity Table</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Sales performance" id="salesBtn">
+                <i class="fas fa-chart-line"></i>
+                <span>Sales performance</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="page-content" id="content">
+      
+          
+        </section>
+      </main>
+    </div>
+ 
+      <script src="script.js" type="module"></script>
+      <script src="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+      <script
+src="https://www.gstatic.com/charts/loader.js">
+</script>
+    
+  </body>
+
+</html>
