@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h1 style="font: 5em sans-serif;">Birthdays</h1>
+    <!-- <p>This is the about page content.</p> -->
+    <section class="create-client" >
+      <button  id="myBtn" onclick="birthdays()"><i class="fas fa-plus" ></i>Show Birthdays</button>
+    </section>
+    <div class="box bg-purple" onclick="birthdays()" id="purpleBack">
+        <p>Upcoming Birthday</p>
+        <div class="icon-value">
+          <div class="icon">
+            <i class="fas fa-birthday-cake"></i>
+          </div>
+          <p class="totalBirth" style="font-size: 3rem;">****</p>
+        </div>
+        <div id="birthDays">
+
+        </div>
+      </div>
+      <script src="../scripts/aboutScript.js"></script>
+</body>
+</html>
