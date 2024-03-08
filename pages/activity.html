@@ -1,0 +1,34 @@
+
+        <h1 style="font: 5em sans-serif;">Activity Table</h1>
+        <section class="create-client" >
+            <button  id="myBtn" onclick="showTable()"><i class="fas fa-plus" ></i>Show Table</button>
+          </section>
+        <table id="dynamic-table-1" class="table" style="display: none;"
+        data-id-field="code"
+        data-sort-name="value1"
+        data-sort-order="desc"
+        data-show-chart="false"
+        data-pagination="false"
+        data-show-pagination-switch="false">
+     <thead>
+         <tr>
+            
+            <th data-field="value4" data-sortable="true">Activity Type</th>
+             <th data-field="code" data-sortable="true">Name</th>
+             <th data-field="value1" data-sortable="true">Email</th>
+             <th data-field="value2" data-sortable="true">Phone/Role</th>
+             <th data-field="value3" data-sortable="true">Note</th>
+         </tr>
+     </thead>
+     <tbody id="body">
+        <!-- //Dynamic Table loading      -->
+     </tbody>
+ </table>
+ <script type="text/javascript">
+         $( document ).ready(function() {
+             $('#dynamic-table-1').datatable({});
+         });
+ </script>
+</body>
+</html> 
+
