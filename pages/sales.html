@@ -1,0 +1,91 @@
+<h1 style="font: 5em sans-serif; margin: 20px;">Sales & Performance</h1>
+<section id="modal1">
+    <!-- The Modal -->
+    <div id="myModal1" class="modal1" >
+    <style>
+        .modal-content1{
+            min-height: 300px;
+        }
+    
+        .tableContainer div {
+            width:33%;
+            
+        }
+        .tableContainer table {
+            width:80%;
+            padding:10px;
+            border:1px solid #ccc;
+        }
+        .tableContainer canvas {
+            width:100%;
+            padding:2px;
+            margin: 2px;
+            border:1px solid #ccc;
+            overflow:scroll;
+       
+        }
+    </style>
+      <!-- Modal content -->
+      <div class="modal-content1">
+        <span class="close1">&times;</span>
+        <div id="head" style="text-align: center;font-size: large;"></div>
+        <div class="tableContainer" style="width:100%;display: flex; flex-direction: row;" id="reven">
+                <!-- //dynamic-table-1 loading -->
+        </div>  
+        <div id="foot" style="margin: 20px;padding: 5px;text-align: center;font-size: medium;"></div>
+      </div>
+    </div>
+  </section>
+<div style="display: flex;justify-content: space-around;flex-direction: column;">
+     <div style="display: flex;flex-direction: row;">
+      <div class="box bg-ash " style="margin: 3px;width: 50%;" onclick="clickFunc3()">
+        <p>Sales Velocity</p>
+        <div class="icon-value">
+          <div class="icon">
+            <i class="fas fa-money-bill"></i>
+          </div>
+          <p class="transactionVal" id="transacVal">****</p>
+        </div>
+      </div>  
+      
+      <div class="box bg-deep-blue " style="margin: 3px;width: 50%;" onclick="clickFunc2()">
+        <p>Conversion Rates</p>
+        <div class="icon-value">
+          <div class="icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <p class="transactionVal" id="transacVal">****</p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex;flex-direction: row;">
+      <div class="box bg-pink " style="margin: 3px;width: 50%;" onclick=clickFunc4()>
+        <p>Deal Win Rates</p>
+        <div class="icon-value">
+          <div class="icon">
+            <i class="fas fa-percent"></i>
+          </div>
+          <p class="transactionVal" id="transacVal">****</p>
+        </div>
+      </div>
+      
+      <div class="box bg-pale"  style="margin: 3px;width: 50%;" id="myBtn1" onclick="clickFunc()">
+        <p>Revenue Generation</p>
+        <div class="icon-value">
+          <div class="icon">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <p class="customerVal">****</p>
+        </div>
+      </div>
+</div>
+<div class="box bg-cyan " style="margin: 3px;" onclick="clickFunc5()">
+    <p>Sales Forecast</p>
+    <div class="icon-value">
+      <div class="icon">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <p class="transactionVal" id="transacVal">****</p>
+    </div>
+  </div>
+</div>
